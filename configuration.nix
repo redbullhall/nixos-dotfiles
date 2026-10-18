@@ -15,7 +15,7 @@
   time.timeZone = "Europe/London";
   
   services.getty.autologinUser = "user";
-
+  services.sshd.enable = true;
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
