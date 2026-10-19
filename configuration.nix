@@ -16,6 +16,7 @@
   
   services.getty.autologinUser = "user";
   services.sshd.enable = true;
+  services.flatpak.enable = true;
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
