@@ -19,7 +19,7 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
-
+    withUWSM.enable = true;
   };
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
@@ -33,6 +33,20 @@
     packages = with pkgs; [
       tree
     ];
+  };
+  xdg.portal = {
+	enable = true;
+	extraPortals = [
+		pkgs.xdg-desktop-portal-hyprland
+		pkgs.xdg-desktop-portal-gtk
+	];
+	config.common.default = ["hyprland" "gtk"];
+  };
+  services.pipewire = {
+	enable = true;
+	alsa.enable = true;
+	jack.enable = true;
+	pulse.enable = true;
   };
 
   programs.firefox.enable = true;
