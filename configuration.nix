@@ -48,6 +48,7 @@
     fastfetch
     dysk
     python3
+    links
     (writeShellApplication {
     	name = "ns";
 	runtimeInputs = with pkgs; [
@@ -65,6 +66,7 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
+  nix.channel.enable = false;
 
   system.stateVersion = "26.05"; 
 }
