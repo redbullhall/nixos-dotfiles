@@ -73,6 +73,7 @@
     wget
     foot
     kitty
+    wl-clipboard
     waybar
     git
     hyprpaper
