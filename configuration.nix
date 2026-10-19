@@ -13,8 +13,23 @@
   networking.hostName = "hyprland-btw";
   networking.networkmanager.enable = true;
 
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+  services.blueman.enable = true;
+  services.power-profiles-daemon.enable = true;
+  services.fstrim.enable = true;
+
+  services.xserver.xkb = {
+    layout = "us,ru";
+    options = "grp:alt_shift_toggle";
+  };
+
   time.timeZone = "Europe/London";
-  
+  hardware.graphics.enable = {
+    enable = true;
+    enable32Bit = true;
+  };
+
   services.getty.autologinUser = "user";
   services.sshd.enable = true;
   programs.hyprland = {
@@ -43,6 +58,7 @@
 	];
 	config.common.default = ["hyprland" "gtk"];
   };
+  security.rtkit.enable = true;
   services.pipewire = {
 	enable = true;
 	alsa.enable = true;
