@@ -48,7 +48,7 @@
     fastfetch
     dysk
     python3
-    links
+    links3
     (writeShellApplication {
     	name = "ns";
 	runtimeInputs = with pkgs; [
