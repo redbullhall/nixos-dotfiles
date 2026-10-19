@@ -19,7 +19,7 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
-    withUWSM.enable = true;
+    withUWSM = true;
   };
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
