@@ -81,6 +81,7 @@
     python3
     links2
     nbfc-linux
+    kanata
     (writeShellApplication {
     	name = "ns";
 	runtimeInputs = with pkgs; [
