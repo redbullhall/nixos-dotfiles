@@ -80,6 +80,7 @@
     dysk
     python3
     links2
+    nbfc-linux
     (writeShellApplication {
     	name = "ns";
 	runtimeInputs = with pkgs; [
