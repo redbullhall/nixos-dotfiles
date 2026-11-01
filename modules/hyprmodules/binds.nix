@@ -38,12 +38,6 @@
 				}
 				{
 					_args = [
-						"ALT + R"
-						(lib.generators.mkLuaInline "hl.dsp.submap(\"resize\")")
-					];
-				}
-				{
-					_args = [
 						"XF86AudioRaiseVolume"
 						(lib.generators.mkLuaInline ''
 							hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+")

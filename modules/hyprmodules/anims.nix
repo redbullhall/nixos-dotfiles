@@ -275,11 +275,6 @@
 						];
 					}
 				];
-				config = {
-					animations = {
-						enabled = true;
-					};
-				};
 			};
 		};
 }
