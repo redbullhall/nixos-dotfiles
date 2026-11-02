@@ -83,6 +83,11 @@
 	};
 	home.packages = with pkgs; [
 		hyprpaper
+		gimp
+		krita
+		qemu
+		qemu_kvm
+		pmbootstrap
 		steam
 		wl-clipboard
 		kdePackages.kdenlive

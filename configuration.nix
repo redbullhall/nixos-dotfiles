@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
       ./nbfc.nix
     ];
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [ "usbcore.autosuspend=-1" ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
